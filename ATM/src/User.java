@@ -33,7 +33,10 @@ public class User
       return pin;
    }
    
-   //public Account getAccount()
+   public Account getAccount()
+   {
+       return account;
+   }
    
    public boolean validatePin(int aPin)
    {
@@ -44,8 +47,8 @@ public class User
          
    }
    
-   /*public void printAccountsSummary()
+   public void printAccountsSummary()
    {
-   
-   }*/
+      account.printTransactionHistory();
+   }
 }
